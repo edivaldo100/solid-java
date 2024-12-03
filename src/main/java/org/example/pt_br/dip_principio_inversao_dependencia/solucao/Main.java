@@ -4,6 +4,12 @@ import org.example.pt_br.srp_principio_responsabilidade_unica.violacao.Pedido;
 
 /**
  * DIP SOLUÇÃO
+ *
+ *  INVERSÃO DE DEPENDÊNCIA = é o conceito
+ *
+ *  diferente de
+ *
+ *  INJEÇÃO DE DEPENDÊNCIA = é um designer pattern
  */
 public class Main {
 

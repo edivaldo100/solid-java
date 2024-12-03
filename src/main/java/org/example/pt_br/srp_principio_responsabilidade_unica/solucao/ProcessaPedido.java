@@ -17,9 +17,9 @@ public class ProcessaPedido {
         pedido.setEmailCliente("sandrolax@gmail.com");
         pedido.setId(47);
 
-        pgRepo.salvar(pedido);
+        pgRepo.salvar(pedido);//a classe agora não sabe como salva o pedido e sim so faz uso da pgRepo
 
-        enviarEmail.enviarEmailConfirmacao(pedido);
+        enviarEmail.enviarEmailConfirmacao(pedido);//a classe agora não sabe como envia email uso
     }
 
 }

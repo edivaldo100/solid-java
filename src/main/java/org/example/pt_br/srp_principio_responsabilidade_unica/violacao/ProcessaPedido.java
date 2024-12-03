@@ -5,7 +5,7 @@ package org.example.pt_br.srp_principio_responsabilidade_unica.violacao;
  */
 public class ProcessaPedido {
 
-    public Pedido processar(Pedido pedido) {
+    public Pedido processar(Pedido pedido) {//ok faz sentido esta aqui
         // Regra de negócio processar pedido
 
         boolean persistidoBanco = salvar(pedido);
@@ -17,7 +17,7 @@ public class ProcessaPedido {
         return pedido;
     }
 
-    private boolean salvar(Pedido pedido) {
+    private boolean salvar(Pedido pedido) {//não faz sentido aqui
         ConexaoPostgres dbConnection = new ConexaoPostgres("database.url");
 
         try {
@@ -30,7 +30,7 @@ public class ProcessaPedido {
         return true;
     }
 
-    private void enviarEmailConfirmacao(Pedido pedido) {
+    private void enviarEmailConfirmacao(Pedido pedido) {//não faz sentido aqui
         SmtpGmail smtp = new SmtpGmail("usuarioSmtp", "senhaSmtp");
         String nome = pedido.getNomeCliente();
         String email = pedido.getEmailCliente();
